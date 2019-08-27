@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Form</title>
+
+</head>
+
+<body>
+  <form action="./pagina2.html" method="GET">
+    <fieldset>
+      <legend>datos personales</legend>
+      <label for="Nombre">Nombre: <input id="nombre" name="Nombre" type="text" required /></label>
+      <br />
+      <br />
+      <label for="Apellido">Clave: <input id="Password" name="Password" type="password" /></label><br /><br />
+      <label for="Edad">Edad: <input id="Edad" name="Edad" type="text" /></label><br /><br />
+      <label for="cboPais">
+        pais:
+        <select name="pais" id="cboPais">
+          <option value="Argentina">Argentina</option>
+          <option value="Peru">Peru</option>
+          <option value="Dinamarca">Dinamarca</option>
+          <option value="Ecuador">Ecuador</option>
+        </select>
+      </label>
+      <br /><br />
+      <fieldset>
+        <legend>Genero</legend>
+        <label for="rdbMasculino">Masculino:<input value="Masculino" type="radio" name="Sexo"
+            id="rdbMasculino" /></label>
+        <label for="rdbFemenio">Femenino:<input type="radio" value="Femenino" name="Sexo" id="rdbFemenio" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Hobbie</legend>
+        <label for="chBilbo">Bilbo<input type="checkbox" value="Bilbo" name="Hobbie" id="chBilbo" /></label>
+        <label for="chFrodo">Frodo<input type="checkbox" value="Frodo" name="Hobbie" id="chFrodo" /></label>
+      </fieldset>
+      <br /><br />
+      <label for="textarea">
+        <textarea name="textarea" id="comentario" cols="30" rows="10">
+          </textarea>
+      </label>
+      <br /><br />
+      <input type="submit" value="login" />
+      <input type="reset" value="limpiar form" />
+    </fieldset>
+  </form>
+</body>
+
+</html>
