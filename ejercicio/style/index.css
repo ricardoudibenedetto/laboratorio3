@@ -2,8 +2,12 @@
     height: 100%;
 }
 
+.contenedor{
+    max-width:1200px;
+    margin:0 auto;
+}
 .site-header{
-    padding: 0 5%; 
+  
     height: 100vh;
     background: url("../imgBienesRaices/img/header.jpg");
     color: white;
