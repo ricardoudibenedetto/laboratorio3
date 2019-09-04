@@ -35,6 +35,15 @@
 }
 
 .navegacion > a{
+    margin-right: 10px; 
     color: white;
     text-decoration: none;
+}
+
+.navegacion a:last-of-type{
+    margin-right: 0;
+} 
+
+.navegacion a:hover{
+    color: darkgreen;
 }
