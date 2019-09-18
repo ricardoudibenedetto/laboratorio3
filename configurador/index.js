@@ -37,7 +37,8 @@ function loadAnuncio() {
         else {
             coa ="alquiler";
         }
-        anuncios.push(new Anuncio(txtTitulo.value, coa, txtPrecio.value, txtBaño.value,txtDormitorio.value ,txtGarage.value ,txtaDescripcion.value))
+        
+        anuncios.push(new Anuncio(txtTitulo.value,txtImagen.value, coa, txtPrecio.value, txtBaño.value,txtDormitorio.value ,txtGarage.value ,txtaDescripcion.value))
         console.log(anuncios);
     })
 }

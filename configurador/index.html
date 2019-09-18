@@ -19,9 +19,9 @@
 
             <div class="label-input">
                 <label for="txtTitulo">Titulo: </label>
-                <input id="txtTitulo" name="titulo" type="text" placeholder="   Ingrese un Titulo para la propiedad" required pattern="[a-zA-Z]" />
+                <input id="txtTitulo" name="titulo" type="text" placeholder="   Ingrese un Titulo para la propiedad" required pattern="[0-9a-zA-Z]+" />
                 <label for="txtImagen">Imagen: </label>
-                <input id="txtImagen" name="imagen" type="text" placeholder="   Ingrese un codigo de imagen de Base24" required pattern="[a-zA-Z]" />
+                <input id="txtImagen" name="imagen" type="text" placeholder="   Ingrese un codigo de imagen de Base24" required pattern="[a-zA-Z]+" />
                 <label for="txtDescripcion">Descripcion:</label>
                 <textarea name="descripcion" id="txtaDescripcion" cols="30" rows="5" placeholder="  Ingrese una Descripcion sobre la propiedad"></textarea>
             </div>
@@ -37,18 +37,18 @@
             </div>
             <div class="label-input">
                 <label for="txtPrecio">precio: </label>
-                <input id="txtPrecio" name="precio" type="text" placeholder="   Ingrese un Precio en $" pattern="[0-9]" required />
+                <input id="txtPrecio" name="precio" type="text" placeholder="   Ingrese un Precio en $" pattern="[0-9]+" required />
 
                 <label for="txtDormitorio">Dormitorio:</label>
-                <input type="text" name="dormitorio" placeholder="  Ingrese cantidad de Dormitorios" id="txtDormitorio"
+                <input type="number" name="dormitorio" placeholder="  Ingrese cantidad de Dormitorios" id="txtDormitorio"
                     pattern="[1-5]" required>
 
                 <label for="txtBaño">Baño: </label>
-                <input type="text" name="baño" id="txtBaño" placeholder="   Ingrese cantidad de Baños" pattern="[1-5]"
+                <input type="number" name="baño" id="txtBaño" placeholder="   Ingrese cantidad de Baños" pattern="[1-5]+"
                     required>
 
                 <label for="txtGarage">Garage: </label>
-                <input type="text" name="garage" id="txtGarage" placeholder="   Ingrese cantidad de Garage" pattern="[0-5]"
+                <input type="number" name="garage" id="txtGarage" placeholder="   Ingrese cantidad de Garage" pattern="[0-5]+"
                     required>
             </div>
             <div class="btnGrid">
