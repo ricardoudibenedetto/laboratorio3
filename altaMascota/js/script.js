@@ -24,6 +24,7 @@ function manejadorSubmit($event) {
 }
 
 function obtenerMascota(frm) {
+    debugger
     let nombre;
     let edad;
     let tipo;
