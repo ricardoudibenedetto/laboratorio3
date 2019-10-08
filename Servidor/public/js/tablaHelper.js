@@ -1,6 +1,5 @@
 function crearTabla(array){
    let tabla = document.createElement("table");
-    tabla.style.paddingRight = "20px";
    let cabecera = document.createElement('tr');
    
    for(atributo in array[0]) {
@@ -10,18 +9,6 @@ function crearTabla(array){
    }
 
    tabla.appendChild(cabecera);
-
-   /* for(i in array) { debugger
-        let fila = document.createElement("tr");
-        let objeto = array[i];
-        for(j in objeto){
-            let celda = document.createElement("td");
-            let dato = document.createTextNode(objeto[j]);
-            celda.appendChild(dato);
-            fila.appendChild(celda);
-        }
-        tabla.appendChild(fila);
-    } */
     for(indice in array) {
        
         let fila = document.createElement("tr");

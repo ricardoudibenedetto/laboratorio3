@@ -25,7 +25,10 @@ body{
 table{
     width: 40vw;
     border-collapse :collapse;
-    border: 1px solid black;
+    padding: 10px;
+    box-shadow: -2px 5px 10px silver;
+    animation-duration: 3s;
+    animation-name: aparece;
 }
 
 table > tr{
@@ -35,7 +38,7 @@ table > tr{
 
 table tr td{
     text-align: center;
-    color: green;
+    color: rgba(0, 0, 0, 0.842);
 }
 
 input{
@@ -46,4 +49,23 @@ input{
     display: flex;
     justify-content: space-around;
     transition: 1s;
+}
+
+.botonera input{
+    background: rgb(49, 131, 255);
+    color: white;
+    height: 30px;
+    border:  none;
+    margin: 2px;
+}
+
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
