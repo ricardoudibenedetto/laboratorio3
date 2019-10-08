@@ -50,12 +50,8 @@ function manejadorSubmit($event) {
 
 function cargarEventos() {
     let trs = document.getElementsByTagName('tr');
-    debugger
-    for (let index = 0; index < trs.length; index++) {
+    for (let index = 1; index < trs.length; index++) {
         trs[index].addEventListener("click", cargarForm)
-
-
-
     }
 }
 

@@ -7,6 +7,7 @@ body{
     width: 40vw;
     box-shadow: -2px 5px 10px silver;
     padding: 30px;
+    transition: 3s;
 }
 
 .frm label{
@@ -68,4 +69,9 @@ input{
     100%{
         opacity: 1;
     }
+}
+
+.botonera input:hover{
+
+    background: rgb(32, 84, 161);
 }

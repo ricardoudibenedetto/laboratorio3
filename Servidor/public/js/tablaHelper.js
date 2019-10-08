@@ -11,17 +11,17 @@ function crearTabla(array){
    tabla.appendChild(cabecera);
     for(indice in array) {
        
-        let fila = document.createElement("tr");
-        fila.style.borderBottom = "1px solid silver";
+        let tr = document.createElement("tr");
+        tr.style.borderBottom = "1px solid silver";
         objeto = array[indice];
         for(valores in objeto) {
-            let celda = document.createElement('td');
+            let td = document.createElement('td');
             let dato = document.createTextNode(objeto[valores]);
-            celda.appendChild(dato);
-            fila.appendChild(celda);
+            td.appendChild(dato);
+            tr.appendChild(td);
         }
        
-        tabla.appendChild(fila);
+        tabla.appendChild(tr);
     }
 return tabla;
     
