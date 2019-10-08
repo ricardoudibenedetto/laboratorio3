@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/tablaHelper.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Hola mundo</h1>
-    <script>
-    
-     let x = {nombre : "jose", apellido:"Perez", edad :40};
+    <div class="container">
+        <form action="" class="frm" id="frm">
+            <label for="txtId">
+                Id:
+                <input type="text" name="id" id="txtId" disabled>
+            </label>
+            <label for="txtNombre">
+                Nombre:
+                <input type="text" name="nombre" id="txtNombre">
+            </label>
+            <label for="txtApellido">
+                Apellido:
+                <input type="text" name="apellido" id="txtApellido">
+            </label>
+            <label for="txtEdad">
+                Edad:
+                <input type="number" name="edad" id="txtEdad">
+            </label>
+            <br>
+            <div class="botonera">
+                <input type="submit" value="cargar valores" id="btnSubmit" />
+                <input type="button" value="modificar" id="btnModificar" />
+                <input type="button" value="eliminar" id="btnEliminar" />
+            </div>
+        </form>
 
-     let xhr= new XMLHttpRequest();
-     xhr.onreadystatechange = ()=>{
-        if( xhr.readyState == 4 && xhr.status == 200){
-            console.log(JSON.parse(xhr.responseText));
-        }
-     }
-     xhr.open('POST', 'http://localhost:3000/altaPersona', true);
-     xhr.setRequestHeader('Content-type', 'application/json');
-     xhr.send(JSON.stringify(x));
+        <div id="tabla">
 
-    
-    
-    </script>
+        </div>
+    </div>
 </body>
 </html>
