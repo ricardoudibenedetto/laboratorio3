@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+}
+.frm{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    box-shadow: -2px 5px 10px silver;
+    padding: 30px;
+    transition: 3s;
+}
+
+.frm label{
+    margin-bottom: 20px;
+}
+
+.botonera{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+table{
+    width: 40vw;
+    border-collapse :collapse;
+    padding: 10px;
+    box-shadow: -2px 5px 10px silver;
+    animation-duration: 3s;
+    animation-name: aparece;
+}
+
+table > tr{
+    border-bottom: 1px solid silver;
+
+}
+
+table tr td{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+input{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.botonera input{
+    background: rgb(49, 131, 255);
+    color: white;
+    height: 30px;
+    border:  none;
+    margin: 2px;
+}
+
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.botonera input:hover{
+
+    background: rgb(32, 84, 161);
+}
