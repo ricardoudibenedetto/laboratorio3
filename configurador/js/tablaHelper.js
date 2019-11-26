@@ -41,9 +41,11 @@ function crearTabla(array) {
     }
     return tabla; */
 
-    let tabla = document.createElement("table");
+   let tabla = document.createElement("table");
    let cabecera = document.createElement('tr');
-   
+   tabla.setAttribute('border','1px solid black');
+    tabla.setAttribute('style','border-collapse :collapse');
+    tabla.setAttribute('width','700px');
    for(atributo in array[0]) {
         let th = document.createElement('th');
         th.textContent = atributo;
@@ -52,7 +54,6 @@ function crearTabla(array) {
 
    tabla.appendChild(cabecera);
     for(indice in array) {
-       
         let tr = document.createElement("tr");
         tr.style.borderBottom = "1px solid silver";
         objeto = array[indice];
@@ -62,7 +63,6 @@ function crearTabla(array) {
             td.appendChild(dato);
             tr.appendChild(td);
         }
-       
         tabla.appendChild(tr);
     }
 return tabla;

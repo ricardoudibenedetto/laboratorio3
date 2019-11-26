@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style/index.css">
     <script src="./js/anuncios.js"></script>
+    <script src="./js/service.js"></script>
     <script src="./js/tablaHelper.js"></script>
     <script src="./js/index.js"></script>
     <title>Form</title>
@@ -25,9 +26,9 @@
                     <label for="txtId">Id:</label>
                     <input type="text" name="id" id="txtId" disabled>
                     <label for="txtTitulo">Titulo: </label>
-                    <input id="txtTitulo" name="titulo" type="text" placeholder="   Ingrese un Titulo para la propiedad" required pattern="[0-9a-zA-Z]+" />
-                    <label for="txtImagen">Imagen: </label>
-                    <input id="txtImagen" name="imagen" type="text" placeholder="   Ingrese un codigo de imagen de Base24" required pattern="[a-zA-Z]+" />
+                    <input id="txtTitulo" name="titulo" type="text" placeholder="   Ingrese un Titulo para la propiedad" required />
+                    <!-- <label for="txtImagen">Imagen: </label>
+                    <input id="txtImagen" name="imagen" type="text" placeholder="   Ingrese un codigo de imagen de Base24" required pattern="[a-zA-Z]+" /> -->
                     <label for="txtDescripcion">Descripcion:</label>
                     <textarea name="descripcion" id="txtaDescripcion" cols="30" rows="5" placeholder="  Ingrese una Descripcion sobre la propiedad"></textarea>
                 </div>
@@ -37,7 +38,7 @@
                         <legend>Operacion</legend>
                         <label for="rdbCompra">Compra:<input value="compra" type="radio" name="compraOAlquiler"
                                 id="rdbCompra" required /></label>
-                        <label for="rdbAlquiler">Alquiler:<input type="radio" value="venta" name="compraOAlquiler"
+                        <label for="rdbAlquiler">Alquiler:<input type="radio" value="alquiler" name="compraOAlquiler"
                                 id="rdbAlquiler" required /></label>
                     </fieldset>
                 </div>
@@ -59,13 +60,30 @@
                 </div>
                 <div class="btnGrid">
                     <input type="submit" value="cargar valores" id="btnSubmit" />
-                    <input type="reset" value="limpiar form" />
+                    <input type="button" value="Eliminar" id="btnEliminar" />
                 </div>
             </div>
         </form>
-
-        <div id="tabla" class="tabla">
-            
+        <div>
+            <form action="#">
+                <label for="Cbtitulo">Titulo</label>
+                <input type="checkbox"  value="titulo"  name="cbtitulo" id="Cbtitulo" checked>
+                <label for="CbCompraOAlquiler">CompraOAlquiler</label>
+                <input type="checkbox"  value="compraOAlquiler" name="cbCompraOAlquiler" id="CbCompraOAlquiler" checked>
+                <label for="CbPrecio">Precio</label>
+                <input type="checkbox"  value="precio" name="cbPrecio" id="CbPrecio" checked>
+                <label for="CbBaños">Baños</label>
+                <input type="checkbox"  value="baños" name="cbBaños" id="CbBaños" checked>
+                <label for="CbDormitorios">Dormitorios</label>
+                <input type="checkbox"  value="dormitorios" name="cbDormitorios" id="CbDormitorios" checked>
+                <label for="CbGarage">Garage</label>
+                <input type="checkbox" value="garage"  name="cbGarage" id="CbGarage" checked>
+                <label for="CbDescripcion">Descripcion</label>
+                <input type="checkbox" value="descripcion"  name="cbDescripcion" id="CbDescripcion" checked>
+            </form>
+            <div id="tabla" class="tabla">
+                
+            </div>
         </div>
     </div>
 </body>
