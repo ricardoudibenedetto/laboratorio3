@@ -1,0 +1,4 @@
+enum ETransaccion{
+    venta,
+    alquiler
+}

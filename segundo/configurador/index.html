@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./js/anuncios.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/tablaHelper.js"></script>
+    <script src="./js/index.js"></script>
+    <title>Form</title>
+
+</head>
+
+<body>
+    <h1>Configurador de Anuncios</h1>
+    <div class="container">
+
+        <form id="form" action="">
+    
+            <div class="gridGeneral">
+    
+                <div class="label-input">
+                    <label for="txtId">Id:</label>
+                    <input type="text" name="id" id="txtId" disabled>
+                    <label for="txtTitulo">Titulo: </label>
+                    <input id="txtTitulo" name="titulo" type="text" placeholder="   Ingrese un Titulo para la propiedad" required />
+                    <!-- <label for="txtImagen">Imagen: </label>
+                    <input id="txtImagen" name="imagen" type="text" placeholder="   Ingrese un codigo de imagen de Base24" required pattern="[a-zA-Z]+" /> -->
+                    <label for="txtDescripcion">Descripcion:</label>
+                    <textarea name="descripcion" id="txtaDescripcion" cols="30" rows="5" placeholder="  Ingrese una Descripcion sobre la propiedad"></textarea>
+                </div>
+                <div class="label-input">
+    
+                    <fieldset class="operacion">
+                        <legend>Operacion</legend>
+                        <label for="rdbCompra">Compra:<input value="compra" type="radio" name="compraOAlquiler"
+                                id="rdbCompra" required /></label>
+                        <label for="rdbAlquiler">Alquiler:<input type="radio" value="alquiler" name="compraOAlquiler"
+                                id="rdbAlquiler" required /></label>
+                    </fieldset>
+                </div>
+                <div class="label-input">
+                    <label for="txtPrecio">precio: </label>
+                    <input id="txtPrecio" name="precio" type="text" placeholder="   Ingrese un Precio en $" pattern="[0-9]+" required />
+    
+                    <label for="txtDormitorio">Dormitorio:</label>
+                    <input type="number" name="dormitorio" placeholder="  Ingrese cantidad de Dormitorios" id="txtDormitorio"
+                        pattern="[1-5]" required>
+    
+                    <label for="txtBaño">Baño: </label>
+                    <input type="number" name="baño" id="txtBaño" placeholder="   Ingrese cantidad de Baños" pattern="[1-5]+"
+                        required>
+    
+                    <label for="txtGarage">Garage: </label>
+                    <input type="number" name="garage" id="txtGarage" placeholder="   Ingrese cantidad de Garage" pattern="[0-5]+"
+                        required>
+                </div>
+                <div class="btnGrid">
+                    <input type="submit" value="cargar valores" class="btn btn-primary" id="btnSubmit" />
+                    <input type="button" value="Eliminar" class="btn btn-danger" id="btnEliminar" />
+                </div>
+            </div>
+        </form>
+        <div>
+            <label for="selTransaccion">Transacion:</label>
+            <select name="" id="selTransaccion"></select> <br><br>
+            
+            <label for="promedio">Promedio: </label>
+            <input type="text" id="promedio" name="Promedio">
+
+        </div>
+        <div>
+            <form action="#">
+                <label for="Cbtitulo">Titulo</label>
+                <input type="checkbox"  value="titulo"  name="cbtitulo" id="Cbtitulo" checked>
+                <label for="CbCompraOAlquiler">CompraOAlquiler</label>
+                <input type="checkbox"  value="compraOAlquiler" name="cbCompraOAlquiler" id="CbCompraOAlquiler" checked>
+                <label for="CbPrecio">Precio</label>
+                <input type="checkbox"  value="precio" name="cbPrecio" id="CbPrecio" checked>
+                <label for="CbBaños">Baños</label>
+                <input type="checkbox"  value="baños" name="cbBaños" id="CbBaños" checked>
+                <label for="CbDormitorios">Dormitorios</label>
+                <input type="checkbox"  value="dormitorios" name="cbDormitorios" id="CbDormitorios" checked>
+                <label for="CbGarage">Garage</label>
+                <input type="checkbox" value="garage"  name="cbGarage" id="CbGarage" checked>
+                <label for="CbDescripcion">Descripcion</label>
+                <input type="checkbox" value="descripcion"  name="cbDescripcion" id="CbDescripcion" checked>
+            </form>
+            <div id="tabla" class="tabla mb-5">
+                
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
